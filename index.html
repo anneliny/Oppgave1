@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navn, alder, by</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <button onclick="showThis(myName)">Navn</button>
+    <button onclick="showThis(myAge)">Alder</button>
+    <button onclick="showThis(myCity)">By</button>
+
+    <script>
+        let myName = 'Anneli';
+        let myAge = 29;
+        let myCity= 'Larvik';
+
+       function showThis(myName, myAge, myCity){
+        document.getElementById('app').innerHTML = myName; myAge; myCity;
+       }
+    </script>
+</body>
+</html>
